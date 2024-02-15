@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #e6e6a9;
+    padding: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 2px black;
+}
+th, td {
+    border: solid 2px black;
+    text-align: center;
+    height: 25px;
+    padding: 10px;
+    font-size: 20px;
+}
+th {
+    background-color: #a9f2a9;
+}
