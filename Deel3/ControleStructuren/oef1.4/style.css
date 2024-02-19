@@ -1,0 +1,11 @@
+body {
+    font-family: Roboto, sans-serif;
+    padding: 0;
+}
+p {
+    text-align: center;
+    font-size: 30px;
+}
+#greet {
+    padding-top: 200px;
+}
