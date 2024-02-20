@@ -13,4 +13,4 @@ else if(uur > 12 && uur < 18) {
 else {
     document.getElementById('greet').innerHTML = 'Goede avond!';
 }
-document.getElementById('time').innerHTML = String(uur) + ':' + String(minutes);
+document.getElementById('time').innerText = 'Het is ' + String(uur) + ':' + String(minutes) + ' uur.';
