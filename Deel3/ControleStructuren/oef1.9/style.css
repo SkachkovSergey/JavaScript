@@ -1,0 +1,13 @@
+body {
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+}
+p {
+    font-size: 200%;
+}

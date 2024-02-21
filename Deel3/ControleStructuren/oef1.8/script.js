@@ -1,8 +1,8 @@
 let currentDate = new Date();
 
-let currentDay;
-let currentTimeOfDay = currentDate.getHours();
-let timeOfDay;
+let currentDay;//assigns the days of the week
+let currentTimeOfDay = currentDate.getHours();//it returns the number of hour
+let timeOfDay;//assigns Goedemorgen, Goededag and Goedenacht
 
 switch (currentDate.getDay()){
     case 0:
