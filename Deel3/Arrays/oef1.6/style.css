@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, Georgia,"Times New Roman", fantasy;
+}
+div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+    height: 100vh;
+    font-size: 300%;
+    text-shadow: 5px 5px 5px gray;
+}
