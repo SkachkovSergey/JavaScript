@@ -1,0 +1,12 @@
+body {
+    font-family: Georgia, Arial, "Courier New", monospace;
+}
+div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 30px;
+    font-size: 300%;
+    text-shadow: 3px 4px 5px gray;
+}
