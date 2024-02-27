@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, "New Courier", serif;
+}
+div {
+    font-size: 300%;
+    padding: 30px;
+    margin: 10px;
+    text-shadow: 2px 3px 3px gray;
+}
