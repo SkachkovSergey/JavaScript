@@ -1,8 +1,6 @@
 let date = new Date();
-let day = date.getDate();
-let month = date.getMonth() + 1;
-let year = date.getFullYear();
-let dayOfWeek = date.getDay();
+let currentMonth = date.getMonth() + 1;
+let currentYear = date.getFullYear();
 let result = '';
 
 const daysPerMonthsOfYear = new Array(12);
@@ -22,12 +20,11 @@ daysPerMonthsOfYear[12] = 31;
 const daysOfWeek = ['Zondag','Maandag', 'Dinsdag', 'Woensdag', 'Donderdag',
     'Vrijdag', 'Zaterdag'];
 
-for(let nummer = 1; nummer <= daysPerMonthsOfYear[month]; nummer++){
-    let date = new Date(year, month - 1 , nummer);
-    let dayOfWeek = date.getDay();
-    result += daysOfWeek[dayOfWeek] + ', ' + nummer + ' /' + month + ' / ' + year + '<br>';
+for(let day = 1; day <= daysPerMonthsOfYear[currentMonth]; day++) {
+    let datum = new Date(currentYear, currentMonth - 1, day);
+    let dayOfTheWeek = datum.getDay();
+    result += daysOfWeek[dayOfTheWeek] + ', ' + day + '/' + 0 + currentMonth + '/' + currentYear + '<br>';
 }
-document.getElementById('output').innerHTML = result;
 
-console.log(daysOfWeek[dayOfWeek] + ' , ' + day + '/' + month + '/' + year);
+document.getElementById('output').innerHTML = result;
 
