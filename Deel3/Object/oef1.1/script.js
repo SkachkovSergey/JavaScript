@@ -13,7 +13,7 @@ function makeTable(obj){
     for(let key in obj) {
         console.log(obj[key]);
         table += '<tr>';
-        table += '<th>' + key + '</th>' + '  ';//keys
+        table += '<th>' + key + '</th>';//keys
         table += '<td>' + obj[key] + '</td>';//values
         table += '</tr>';
     }
