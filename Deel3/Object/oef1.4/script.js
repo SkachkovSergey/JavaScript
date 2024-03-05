@@ -28,7 +28,10 @@ function objectToevoegenEnWeergeven() {
 
     let personArray = Object.values(person);
 
-    console.log(personArray.join('\n'));
-    console.log(typeof personArray);
+    let arrayPerson = personArray.join('\n');
+
+    console.log(arrayPerson);
+    console.log(typeof arrayPerson);
+    console.log(personArray);
 }
 objectToevoegenEnWeergeven();
