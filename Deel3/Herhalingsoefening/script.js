@@ -6,19 +6,24 @@ let klanten = [
     {voornaam: 'Doriene', naam: 'Verhoeven', stad: 'Oudsbergen'}
 ];
 
-function mensenUitGenk() {
+function toonMensenUitGenk() {
+    let inwonersVanGenk = [];
     for(let i = 0; i < klanten.length; i++) {
         if(klanten[i].stad === 'Genk') {
-            console.log(klanten[i].voornaam + ' ' + klanten[i].naam);
+            inwonersVanGenk.push(klanten[i]);
         }
     }
+    console.table(inwonersVanGenk);
 }
-mensenUitGenk();
+toonMensenUitGenk();
 
 function lettersTellen() {
+    let totaalAantalLetters = 0;
     for(let klant of klanten) {
         console.log('Aantal letters in ' + klant.naam + ' = ' + klant.naam.length + '.');
+        totaalAantalLetters += klant.naam.length;
     }
+    console.log('Totaal aantal letters is ' + totaalAantalLetters + '.');
 }
 lettersTellen();
 
@@ -60,3 +65,5 @@ function getEveryObject() {
     document.querySelector('p').style.fontSize = '150%';
 }
 getEveryObject();
+
+
