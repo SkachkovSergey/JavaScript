@@ -5,8 +5,10 @@ document.getElementById('red').style.color = 'darkred';
 //part2
 const parentElement = document.getElementById('main');
 //const childElement = parentElement.querySelectorAll('p')[3];
-const lastElement = document.getElementById('weg');
-//const forthElement = parentElement.children[4];
+//const lastElement = document.getElementById('weg');
+//const forthElement = parentElement.children[4]; // all children
+const lastElement = parentElement.querySelectorAll('p:last-child')[0];
+
 
 //parentElement.removeChild(childElement);
 parentElement.removeChild(lastElement);
