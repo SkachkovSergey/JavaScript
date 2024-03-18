@@ -13,4 +13,4 @@ function getBookList() {
         document.getElementById('boekenLijst').appendChild(listItem);
     }
 }
-//getBookList();
+document.getElementById('button').addEventListener('click', getBookList);
