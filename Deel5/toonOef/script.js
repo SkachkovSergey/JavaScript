@@ -12,6 +12,7 @@ function addParagraaf() {
     }
     else {
         teller++;
-        document.getElementById('text').innerHTML = 'Je hebt ' + teller + ' keer op de knop geklikt!';
+        document.getElementById('text').innerHTML = 'Je hebt ' + teller +
+            ' keer op de knop geklikt!';
     }
 }
