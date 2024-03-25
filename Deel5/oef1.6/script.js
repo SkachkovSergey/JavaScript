@@ -24,7 +24,7 @@ function addItem() {
         verwijderButton.appendChild(buttonContent);
         verwijderButton.addEventListener('click', () => {
             list.removeChild(listItem);
-        })
+        });
 
         listItem.appendChild(verwijderButton);
 
