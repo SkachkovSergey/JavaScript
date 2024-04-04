@@ -17,10 +17,10 @@ document.body.insertBefore(document.getElementsByTagName('p')[1], thirdPara);
 document.getElementsByTagName('button')[0].addEventListener('click', textGroter);
 document.querySelectorAll('button')[1].addEventListener('click', textKleiner);
 
-function textGroter() {
-    let aantalParagrafen = document.getElementsByTagName('p').length;
-    let aantalHeadings = document.getElementsByTagName('h1').length;
+let aantalParagrafen = document.getElementsByTagName('p').length;
+let aantalHeadings = document.getElementsByTagName('h1').length;
 
+function textGroter() {
     for(let teller = 0; teller < aantalParagrafen; teller++) {
         document.getElementsByTagName('p')[teller].style.fontSize = '24px';
     }
@@ -30,9 +30,6 @@ function textGroter() {
 }
 
 function textKleiner() {
-    let aantalParagrafen = document.getElementsByTagName('p').length;
-    let aantalHeadings = document.getElementsByTagName('h1').length;
-
     for(let teller = 0; teller < aantalParagrafen; teller++) {
         document.getElementsByTagName('p')[teller].style.fontSize = '14px';
     }
