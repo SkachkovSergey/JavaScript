@@ -1,26 +1,27 @@
 const apiKey = 'f6c22f5827e2dcb75e94b7aef31bc178';
-let lat = '50.7504548';
-let lon = '5.0830121';
+//let lat = '50.7504548';
+//let lon = '5.0830121';
 function getWeather(city) {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=nl
+    &appid=${apiKey}&units=metric`;
     fetch(url)
         .then(response => response.json())
         .then(data => {
             console.log(data)
             console.log('Locatie ' + data.name + '.')
-            console.log(`De temperatuur is ${data.main.temp}`)
+            console.log(`De temperatuur is ${data.main.temp} Celsius.`)
             console.log(`De vochtigheid is ${data.main.humidity} %.`)
             console.log('De windsnelheid ' + data.wind.speed + ' m/s.')
 
 
-            let locatie = document.createElement('p');
+            let locatie = document.createElement('h1');
             let temp = document.createElement('p');
             let humidity = document.createElement('p');
             let windSpeed = document.createElement('p');
 
             let locatieValue = document.createTextNode('Locatie ' + data.name + '.');
             let tempValue = document.createTextNode('Het buitenluchttemperatuur is ' +
-                data.main.temp + ' in Kelvin graden.');
+                data.main.temp + ' graden.');
             let humidityValue = document.createTextNode('De vochtigheid is '
                 + data.main.humidity  + ' %.');
             let windSpeedValue = document.createTextNode('De windsnelheid is '
@@ -50,4 +51,4 @@ function getWeather(city) {
 // document.getElementById('button').addEventListener('click', getWeather);
 
 
-getWeather('Hasselt');
+getWeather('Genk');
