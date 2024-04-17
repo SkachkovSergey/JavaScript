@@ -1,17 +1,4 @@
-// const apiKeyGeo = 'AIzaSyA7S5WPliczY6XslB_ehS_m8lg-nGrm5t8';
-//
-// //let proxy = `https://cors-anywhere.herokuapp.com/`;
-//
-// function getGeoLocation() {
-//     const urlGeolocation = `https://www.googleapis.com/geolocation/v1/geolocate?key=${apiKeyGeo}`;
-//
-//     fetch(urlGeolocation)
-//         .then(response => response.json())
-//         .then(data => {
-//             console.log(data);
-//         })
-//         .catch(error => console.log(error));
-// }
+
 
 
 const x = document.getElementById("demo");
@@ -24,15 +11,14 @@ function getLocation() {
     }
 }
 
-let lat;
-let lon;
+
 
 
 function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude +
         "<br>Longitude: " + position.coords.longitude;
-    lat = position.coords.latitude;
-    lon = position.coords.longitude;
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
     getWeather(lat, lon);
 }
 
