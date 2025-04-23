@@ -26,5 +26,6 @@ for(let day = 1; day <= daysPerMonthsOfYear[currentMonth]; day++) {
     result += daysOfWeek[dayOfTheWeek] + ', ' + day + '/' + 0 + currentMonth + '/' + currentYear + '<br>';
 }
 
-document.getElementById('output').innerHTML = result;
+console.log(result);
+//document.getElementById('output').innerHTML = result;
 
