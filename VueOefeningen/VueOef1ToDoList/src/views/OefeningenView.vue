@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       counter: 0,
-      todos: [],
+      todos: [], //array for todos
     }
   },
   methods: {
